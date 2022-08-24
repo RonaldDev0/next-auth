@@ -1,6 +1,6 @@
 .container {
   text-align: center;
-  margin: 150px auto;
+  margin: 130px auto;
   border: 1px solid gray;
   width: 700px;
   height: 600px;
@@ -10,4 +10,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.navBarr {
+  margin: 20px
+}
+
+.h1 {
+  text-align: center;
+  margin: 150px 0;
+  font-size: 50px;
+}
+
+.button {
+  margin: 150px 0;
 }

@@ -1,6 +1,7 @@
 import Head from 'next/head' 
 import { SessionProvider } from 'next-auth/react'
 import '@picocss/pico'
+import NavBarr from '../components/NavBarr'
 
 export default function MyApp({ Component, pageProps }) {
   return (
@@ -12,6 +13,7 @@ export default function MyApp({ Component, pageProps }) {
         <title>Home</title>
       </Head>
       <SessionProvider>
+        <NavBarr />
         <Component {...pageProps} />
       </SessionProvider>
     </>
