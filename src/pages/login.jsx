@@ -4,9 +4,8 @@ import Head from "next/head"
 import style from '../style/global.module.css'
 
 export default function Login() {
-  const {data: session, status} = useSession()
+  const { status } = useSession()
   const router = useRouter()
-  const providers = getProviders()
 
   if (status !== 'loading' && status === 'authenticated') {
     router.push('/')
