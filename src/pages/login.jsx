@@ -1,4 +1,4 @@
-import { signIn, useSession, getProviders } from "next-auth/react"
+import { signIn, useSession } from "next-auth/react"
 import { useRouter } from "next/router"
 import Head from "next/head"
 import style from '../style/global.module.css'
@@ -16,7 +16,10 @@ export default function Login() {
       <Head>
         <title>Login</title>
       </Head>
-      <button className={style.button} onClick={()=> signIn('github')}>Signin with Github</button>
+      <div className={style.buttonContainer}>
+        <button className={style.button} onClick={()=> signIn('github')}>Signin with Github</button>
+        <button className={style.button} onClick={() => signIn('google')}>Signin with Google</button>
+      </div>
     </div>
   )
 }
