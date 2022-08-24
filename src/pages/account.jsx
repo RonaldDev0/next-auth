@@ -2,6 +2,7 @@ import { useSession, signOut } from 'next-auth/react'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
 import style from '../style/global.module.css'
+import Head from 'next/head'
 
 export default function Account() {
   const {data, status} = useSession()
@@ -13,6 +14,9 @@ export default function Account() {
 
   return (
     <div className='container'>
+      <Head>
+        <title>Account</title>
+      </Head>
       {!data ? 
         <></>
         :

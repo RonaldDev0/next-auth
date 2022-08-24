@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import style from '../style/global.module.css'
 
 export default function Home() {
